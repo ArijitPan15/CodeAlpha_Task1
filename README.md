@@ -154,26 +154,6 @@ git push -u origin main
 
 The local SQLite database is ignored by `.gitignore`; migrations are committed so each clone can create its own database with `python manage.py migrate`.
 
-## 2–3 minute demo video script
-
-**0:00–0:20 — Introduction**  
-“Hi, this is my CodeAlpha URL Shortener, built with Django and SQLite. It turns long web addresses into short links and tracks visits.”
-
-**0:20–0:50 — Create a link**  
-Show the dashboard, paste a long HTTPS URL, and select **Create short link**. Point out the generated code, the copy action, and the new row in the table.
-
-**0:50–1:20 — Redirect and analytics**  
-Open the short link in a new tab. Return to the dashboard and refresh to show that the click count increased. Explain that the view looks up the code and destination in SQLite before redirecting.
-
-**1:20–1:45 — Validation and management**  
-Try an invalid address and show the form error. Open **All links**, point out the date and click count, then demonstrate the delete action if you are comfortable removing the sample row.
-
-**1:45–2:20 — Implementation overview**  
-Show `shortener/forms.py`, `models.py`, and `views.py`. Explain that Django validates the form, saves through the ORM, and increments visits with an atomic database expression. Mention CSRF-protected POST forms and pagination.
-
-**2:20–2:40 — Wrap up**  
-“This project helped me practice Django routing, forms, models, templates, migrations, and testing. Thank you for watching.”
-
 ## Implementation file guide
 
 - `config/settings.py` — Django apps, middleware, SQLite, timezone, and static files.
