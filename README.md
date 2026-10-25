@@ -62,6 +62,9 @@ CodeAlpha_Task1/
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
+├── docs/screenshots/
+│   ├── all-links.png
+│   └── dashboard.png
 ├── .gitignore
 ├── manage.py
 ├── README.md
@@ -134,11 +137,13 @@ python manage.py test
 
 ## Screenshots
 
-Add screenshots after running the app. Suggested files:
+### Dashboard
 
-- `docs/screenshots/dashboard.png` — creation form and recent links.
-- `docs/screenshots/all-links.png` — paginated URL management table.
-- `docs/screenshots/not-found.png` — custom 404 page.
+![LinkLite dashboard with the URL shortening form](docs/screenshots/dashboard.png)
+
+### URL management
+
+![All shortened URLs page showing its empty state](docs/screenshots/all-links.png)
 
 ## GitHub publishing
 
