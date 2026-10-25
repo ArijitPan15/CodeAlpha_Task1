@@ -154,10 +154,6 @@ git push -u origin main
 
 The local SQLite database is ignored by `.gitignore`; migrations are committed so each clone can create its own database with `python manage.py migrate`.
 
-## LinkedIn project description
-
-> Built a responsive URL Shortener with Python, Django, SQLite, Bootstrap 5, HTML, CSS, and JavaScript as part of the CodeAlpha Backend Development internship. The app validates URLs, generates unique short links, redirects visitors, tracks clicks, and provides a paginated dashboard with copy and delete actions. I practiced Django forms, ORM models, migrations, URL routing, templates, CSRF protection, and automated tests.
-
 ## 2–3 minute demo video script
 
 **0:00–0:20 — Introduction**  
