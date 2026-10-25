@@ -1,0 +1,12 @@
+{% extends "shortener/base.html" %}
+
+{% block title %}Short link not found · LinkLite{% endblock %}
+
+{% block content %}
+<section class="not-found card border-0 shadow-sm mx-auto text-center p-4 p-md-5">
+    <div class="error-code">404</div>
+    <h1 class="h3 fw-bold">Short link not found</h1>
+    <p class="text-secondary">This link may have been removed or the code may be incorrect.</p>
+    <a class="btn btn-primary align-self-center" href="{% url 'shortener:home' %}">Back to dashboard</a>
+</section>
+{% endblock %}

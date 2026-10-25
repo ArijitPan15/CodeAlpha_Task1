@@ -1,0 +1,16 @@
+{% extends "shortener/base.html" %}
+
+{% block title %}All links · LinkLite{% endblock %}
+
+{% block content %}
+<section aria-labelledby="links-heading">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4">
+        <div>
+            <span class="eyebrow">Link management</span>
+            <h1 class="h2 fw-bold mb-0 mt-1" id="links-heading">All shortened URLs</h1>
+        </div>
+        <a class="btn btn-primary" href="{% url 'shortener:home' %}">Create a link</a>
+    </div>
+    {% include "shortener/partials/url_table.html" %}
+</section>
+{% endblock %}

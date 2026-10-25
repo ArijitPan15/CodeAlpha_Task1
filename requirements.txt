@@ -1,0 +1,2 @@
+# Django 5.2 is a supported long-term support release.
+Django>=5.2,<6.0
